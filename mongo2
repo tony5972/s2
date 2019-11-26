@@ -1,0 +1,22 @@
+db.order.insert({orderno:3736,custName:"arun kumar",product:{productName:"toycar",price:20000},order_date:"12/2/2019",status:"processed",Totalbill:2039,invoice:{invoiceNO:67564,bill:2039,date:"17/2/2019"}})
+
+ db.order.insert({orderno:3737,custName:"arun kumar",product:{productName:"robot",price:12000},order_date:"11/3/2019",status:"processed",Totalbill:12800,invoice:{invoiceNO:67574,bill:12039,date:"17/3/2019"}})
+
+db.order.insert({orderno:3738,custName:"arun kumar",product:{productName:"cricketset",price:9000},order_date:"15/5/2019",status:"in process",Totalbill:9050})
+
+db.order.insert({orderno:3739,custName:"mukesh patil",product:{productName:"studentmaterial",price:19000}
+,order_date:"15/8/2019",status:"in process",Totalbill:19080})
+
+
+a)> 
+db.product.find().pretty()
+
+b) > 
+db.order.find({Totalbill:{$lt:10000}})
+
+c) > 
+db.order.find({stetus:"in process"})
+d) >
+db.order.find({custName:"arun kumar",stetus:"processed"})
+
+
